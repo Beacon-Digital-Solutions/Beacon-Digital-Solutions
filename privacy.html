@@ -54,14 +54,16 @@
             <div class="prose prose-invert max-w-none text-slate-300 space-y-8 text-[15px]">
                 <div>
                     <h3 class="text-white font-semibold text-xl">Our Core Principle</h3>
-                    <p>Your data belongs to you. Our tools are built so that we never see your personal or financial information and never ask for it. Nothing leaves your device unless you explicitly choose to export it. This is a fundamental design decision, not an optional setting.</p>
+                    <p>Your data belongs to you. Our tools are built so that we never see your personal or financial information and never ask for it. Your data lives on your devices and syncs only through your own private iCloud — never a Beacon server. This is a fundamental design decision, not an optional setting.</p>
                 </div>
 
                 <div>
                     <h3 class="text-white font-semibold text-xl">What Thrive Collects</h3>
                     <ul class="list-disc pl-6 space-y-2">
-                        <li><strong>Nothing by default.</strong> The app runs entirely locally using SwiftData on your Mac. No accounts are created with us. No telemetry or analytics are sent.</li>
-                        <li><strong>Optional email scanning:</strong> If you choose to connect your email for transaction import, credentials are stored only in the macOS Keychain (device-only). We never see or transmit them.</li>
+                        <li><strong>Nothing by default.</strong> The app runs on your own Mac and iPhone. No accounts are created with us. No telemetry or analytics are sent.</li>
+                        <li><strong>iCloud sync:</strong> Your data syncs between your devices through Apple's encrypted CloudKit private database, tied to your Apple ID. It stays in <em>your</em> iCloud — we have no server and cannot read it.</li>
+                        <li><strong>Optional Household Sharing (Premium):</strong> If you turn it on, your data also syncs to the one person you invite — for example, a spouse on their own Apple ID — peer-to-peer through CloudKit sharing. It is never sent to us or any third party, and you can stop sharing at any time.</li>
+                        <li><strong>Optional email scanning:</strong> If you choose to connect your email for transaction import, credentials are stored only in your device's Keychain (device-only — never synced to iCloud or anyone you share with). We never see or transmit them.</li>
                         <li><strong>Optional market data:</strong> Ticker symbols only are sent to Yahoo Finance for price quotes. No account data or balances ever leave.</li>
                         <li><strong>Optional AI features (future):</strong> When enabled, only anonymized, aggregated summaries are sent. Raw transactions, balances, institution names, and personal details stay on your device.</li>
                     </ul>
