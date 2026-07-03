@@ -3,8 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thrive — Private zero-based budgeting for Mac and iPhone. Your data syncs across your devices through your own iCloud — never our servers. Free core app, with a Premium tier that adds planning tools and household sharing for your spouse.">
-    <title>Thrive | Beacon Digital Solutions</title>
+    <meta name="description" content="Private zero-based budgeting for Mac &amp; iPhone, built on Christian stewardship. No bank logins, no tracking — your data stays in your own iCloud. Free app, 7-day Premium trial.">
+    <title>Thrive: Private Zero-Based Budgeting App for Mac &amp; iPhone</title>
+    <link rel="canonical" href="https://beacondigitalsolutionsllc.com/thrive.html">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Beacon Digital Solutions">
+    <meta property="og:title" content="Thrive: Private Zero-Based Budgeting App for Mac &amp; iPhone">
+    <meta property="og:description" content="Every dollar gets a job. No bank logins, no tracking — your data stays in your own iCloud. Free core app; Premium planning tools with a 7-day free trial.">
+    <meta property="og:url" content="https://beacondigitalsolutionsllc.com/thrive.html">
+    <meta property="og:image" content="https://beacondigitalsolutionsllc.com/Budgets_Private.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thrive: Private Zero-Based Budgeting App for Mac &amp; iPhone">
+    <meta name="twitter:description" content="Every dollar gets a job. No bank logins, no tracking — your data stays in your own iCloud.">
+    <meta name="twitter:image" content="https://beacondigitalsolutionsllc.com/Budgets_Private.png">
+
+    <!-- Structured data: the app -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Thrive: Budget Tool",
+      "operatingSystem": "macOS 14.0 or later, iOS 18.0 or later",
+      "applicationCategory": "FinanceApplication",
+      "description": "Private zero-based budgeting for Mac and iPhone built on Christian stewardship. Data stays on device and in the user's own iCloud — no company servers, no accounts, no tracking.",
+      "url": "https://beacondigitalsolutionsllc.com/thrive.html",
+      "image": "https://beacondigitalsolutionsllc.com/Budgets_Private.png",
+      "installUrl": "https://apps.apple.com/app/id6779286706",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free core app. Optional Premium subscription $8/month with a 7-day free trial."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Beacon Digital Solutions LLC",
+        "url": "https://beacondigitalsolutionsllc.com"
+      }
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=1">
@@ -15,23 +54,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!-- =====================================================================
-         THRIVE — SITE CONFIG  (edit these two values, nothing else)
-         =====================================================================
-         1) BB_BACKEND  — the public HTTPS URL where your Flask app.py is
-            deployed. The $8/mo Stripe checkout and the "request a link" form
-            POST here. It MUST be https (this site is https; a non-https
-            backend will be blocked by the browser as mixed content).
-            For a quick LOCAL test only, you can set this to
-            'http://localhost:5001' and open this page over http://localhost.
-         2) BB_DOWNLOAD — the direct download URL for the notarized beta build
-            (.zip or .dmg). The simplest beta option is to drop the file in a
-            /downloads/ folder in this repo and leave the relative path below;
-            a GitHub Releases URL works too.
-    -->
+    <!-- Distribution is App-Store-only: one universal listing for Mac + iPhone. -->
     <script>
-      window.BB_BACKEND  = 'https://api.beacondigitalsolutionsllc.com';
-      window.BB_DOWNLOAD = 'downloads/Thrive-beta.zip';
+      window.APP_STORE_URL = 'https://apps.apple.com/app/id6779286706';
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
@@ -98,16 +123,16 @@
                 </p>
                 
                 <div class="flex flex-wrap gap-4">
-                    <a href="#download"
+                    <a href="https://apps.apple.com/app/id6779286706"
                        class="bg-white hover:bg-slate-100 text-slate-950 font-semibold px-10 py-4 rounded-3xl text-lg flex items-center gap-x-3 transition-all">
-                        <i class="fas fa-download"></i> Download Free (Beta)
+                        <i class="fab fa-apple text-2xl"></i> Download on the App Store
                     </a>
                     <a href="#premium"
                        class="border border-white/60 hover:bg-white/5 font-semibold px-10 py-4 rounded-3xl text-lg flex items-center gap-x-3 transition-all">
                         See Premium features
                     </a>
                 </div>
-                <p class="mt-4 text-sm text-slate-400">Free forever for the core toolkit. Premium unlocks deeper planning tools for $8/mo. 1-day local trial available in-app.</p>
+                <p class="mt-4 text-sm text-slate-400">Free forever for the core toolkit. Premium unlocks deeper planning tools for $8/mo — with a 7-day free trial in-app.</p>
             </div>
         </div>
     </section>
@@ -161,13 +186,13 @@
                     <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1 w-4"></i> <span>Transactions, imports (CSV, OFX, QFX, PDF), watch folders</span></li>
                     <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1 w-4"></i> <span>Dashboard, Emergency Fund, and core budgeting tools</span></li>
                     <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1 w-4"></i> <span>Mac &amp; iPhone, kept in sync through your own encrypted iCloud</span></li>
-                    <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1 w-4"></i> <span>1-day local trial of Premium features inside the app</span></li>
+                    <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1 w-4"></i> <span>7-day free trial of Premium features inside the app</span></li>
                 </ul>
                 
                 <a href="#download" class="mt-10 block text-center bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-semibold py-4 rounded-3xl text-lg">
-                    Download Free (Beta)
+                    Download Free
                 </a>
-                <p class="text-center text-xs text-slate-500 mt-3">Direct download during beta • Upgrade to Premium anytime</p>
+                <p class="text-center text-xs text-slate-500 mt-3">Free on the App Store • Upgrade to Premium anytime</p>
             </div>
 
             <!-- PREMIUM -->
@@ -184,10 +209,10 @@
                 
                 <ul class="space-y-4 text-slate-300 flex-1">
                     <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1 w-4"></i> <span>Everything in Free, plus:</span></li>
-                    <li class="flex gap-3"><i class="fas fa-heart text-emerald-400 mt-1 w-4"></i> <span><span class="text-white font-medium">Household Sharing</span> — manage one budget with your spouse, on their own Apple ID, in sync</span></li>
                     <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1 w-4"></i> <span>Retirement projections with scenario planning</span></li>
                     <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1 w-4"></i> <span>Education (529) savings tracking &amp; projections</span></li>
                     <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1 w-4"></i> <span>Real Estate / mortgage payoff tools</span></li>
+                    <li class="flex gap-3"><i class="fas fa-hourglass-half text-slate-500 mt-1 w-4"></i> <span class="text-slate-400"><span class="font-medium">On the roadmap:</span> Household Sharing — one budget with your spouse, on their own Apple ID</span></li>
                     <li class="flex gap-3"><i class="fas fa-check text-emerald-400 mt-1 w-4"></i> <span>More planning tools coming soon</span></li>
                 </ul>
                 
@@ -224,8 +249,8 @@
                 </div>
                 <div class="space-y-8">
                     <div>
-                        <h4 class="font-semibold text-lg mb-2 flex items-center gap-2"><i class="fas fa-house-user text-emerald-400"></i> Share only if you choose</h4>
-                        <p class="text-slate-400">With Premium Household Sharing, you can invite one person — your spouse — to the same budget through that same private iCloud, peer-to-peer between your households. We still never see it, and you can stop sharing anytime.</p>
+                        <h4 class="font-semibold text-lg mb-2 flex items-center gap-2"><i class="fas fa-house-user text-emerald-400"></i> Built for households</h4>
+                        <p class="text-slate-400">Household Sharing — inviting your spouse to the same budget on their own Apple ID, peer-to-peer through iCloud — is on the roadmap for a future update. When it ships, it will follow the same rule as everything else: we never see your data.</p>
                     </div>
                     <div>
                         <h4 class="font-semibold text-lg mb-2 flex items-center gap-2"><i class="fas fa-file-import text-emerald-400"></i> You bring your own records</h4>
@@ -247,17 +272,17 @@
             <p class="text-xl text-slate-300 mb-10">Download the free app, then unlock Premium for $8/mo whenever you're ready. Either way, your data stays in your own private iCloud — never on our servers.</p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a id="free-download-btn" href="#"
+                <a href="https://apps.apple.com/app/id6779286706"
                    class="inline-flex items-center justify-center gap-x-3 bg-white text-slate-950 font-semibold px-10 py-5 rounded-3xl text-lg hover:bg-slate-100">
                     <i class="fab fa-apple text-2xl"></i>
-                    <span>Download Thrive Free</span>
+                    <span>Download on the App Store</span>
                 </a>
                 <a href="#subscribe"
                    class="inline-flex items-center justify-center gap-x-3 border border-emerald-400 text-emerald-400 hover:bg-emerald-400 hover:text-slate-950 font-semibold px-10 py-5 rounded-3xl text-lg transition-all">
                     Unlock Premium — $8/mo
                 </a>
             </div>
-            <p class="text-xs text-slate-500 mt-4">Mac (macOS 14 Sonoma or later) today via direct beta download; iPhone (iOS 18+) and the App Store versions are coming soon. The same iCloud account keeps them in sync.</p>
+            <p class="text-xs text-slate-500 mt-4">One app for Mac (macOS 14 Sonoma or later) and iPhone (iOS 18+) — download it on each device from the App Store, and the same iCloud account keeps them in sync.</p>
 
             <!-- After downloading: 3-step "how Premium works" so beta users aren't lost -->
             <div class="mt-12 grid sm:grid-cols-3 gap-4 text-left">
@@ -310,6 +335,53 @@
         </div>
     </section>
 
+    <!-- FAQ (matches the FAQPage structured data below) -->
+    <section id="faq" class="max-w-screen-2xl mx-auto px-6 py-20 border-t border-slate-800">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="section-header text-center mb-10">Common questions</h2>
+            <div class="space-y-4">
+                <details class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group">
+                    <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">Is Thrive really free? <i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i></summary>
+                    <p class="text-slate-400 mt-3">Yes. The core zero-based budgeting toolkit — budgets, transactions, imports, dashboard, annual review — is free forever, with no account and no ads. Premium ($8/mo) adds retirement, education, and real-estate planning tools, with a 7-day free trial in-app.</p>
+                </details>
+                <details class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group">
+                    <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">Does Thrive connect to my bank? <i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i></summary>
+                    <p class="text-slate-400 mt-3">No — by design. You never hand over bank credentials. Import transactions from the CSV, PDF, or OFX files your bank already gives you, or optionally let Thrive read transaction-alert emails you receive. Nothing about your accounts ever touches our servers, because we don't have any.</p>
+                </details>
+                <details class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group">
+                    <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">Where is my financial data stored? <i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i></summary>
+                    <p class="text-slate-400 mt-3">On your device, and synced between your Mac and iPhone through your own private iCloud (Apple's encrypted CloudKit). There is no company server, no account with us, and no analytics or tracking of any kind.</p>
+                </details>
+                <details class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group">
+                    <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">What does "zero-based budgeting" mean? <i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i></summary>
+                    <p class="text-slate-400 mt-3">Every dollar of income gets assigned a job — giving, bills, savings, spending — until income minus assignments equals zero. It's the method behind envelope budgeting and apps like YNAB and EveryDollar, and it's the fastest way to know exactly where your money goes.</p>
+                </details>
+                <details class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group">
+                    <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">How is Thrive different from YNAB, Mint, or EveryDollar? <i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i></summary>
+                    <p class="text-slate-400 mt-3">Three things: privacy (no bank linking, no company servers — your data never leaves your Apple devices and iCloud), a native Mac-first app that also runs on iPhone, and a stewardship worldview — Giving/Tithe is a first-class category, and the planning tools treat money as something you manage faithfully, not just optimize.</p>
+                </details>
+                <details class="bg-slate-900 border border-slate-800 rounded-2xl p-6 group">
+                    <summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">Is Thrive a Christian budgeting app? <i class="fas fa-chevron-down text-slate-500 group-open:rotate-180 transition-transform"></i></summary>
+                    <p class="text-slate-400 mt-3">Thrive is built around Christian stewardship — being faithful with what you've been given. Giving comes first in the default budget, and the monthly review is encouraging rather than shaming. That said, it's a full-featured budgeting app anyone can use.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Is Thrive really free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The core zero-based budgeting toolkit — budgets, transactions, imports, dashboard, annual review — is free forever, with no account and no ads. Premium ($8/mo) adds retirement, education, and real-estate planning tools, with a 7-day free trial in-app."}},
+        {"@type": "Question", "name": "Does Thrive connect to my bank?", "acceptedAnswer": {"@type": "Answer", "text": "No — by design. You never hand over bank credentials. Import transactions from the CSV, PDF, or OFX files your bank already gives you, or optionally let Thrive read transaction-alert emails you receive. Nothing about your accounts ever touches our servers, because we don't have any."}},
+        {"@type": "Question", "name": "Where is my financial data stored?", "acceptedAnswer": {"@type": "Answer", "text": "On your device, and synced between your Mac and iPhone through your own private iCloud (Apple's encrypted CloudKit). There is no company server, no account with us, and no analytics or tracking of any kind."}},
+        {"@type": "Question", "name": "What does \"zero-based budgeting\" mean?", "acceptedAnswer": {"@type": "Answer", "text": "Every dollar of income gets assigned a job — giving, bills, savings, spending — until income minus assignments equals zero. It's the method behind envelope budgeting and apps like YNAB and EveryDollar, and it's the fastest way to know exactly where your money goes."}},
+        {"@type": "Question", "name": "How is Thrive different from YNAB, Mint, or EveryDollar?", "acceptedAnswer": {"@type": "Answer", "text": "Three things: privacy (no bank linking, no company servers — your data never leaves your Apple devices and iCloud), a native Mac-first app that also runs on iPhone, and a stewardship worldview — Giving/Tithe is a first-class category, and the planning tools treat money as something you manage faithfully, not just optimize."}},
+        {"@type": "Question", "name": "Is Thrive a Christian budgeting app?", "acceptedAnswer": {"@type": "Answer", "text": "Thrive is built around Christian stewardship — being faithful with what you've been given. Giving comes first in the default budget, and the monthly review is encouraging rather than shaming. That said, it's a full-featured budgeting app anyone can use."}}
+      ]
+    }
+    </script>
+
     <!-- VIDEOS TEASER -->
     <section class="max-w-screen-2xl mx-auto px-6 pb-20">
         <div class="bg-slate-900 rounded-3xl p-12 text-center">
@@ -356,15 +428,5 @@
         </div>
     </footer>
 
-    <!-- Point the free-download button at the configured download URL (window.BB_DOWNLOAD) -->
-    <script>
-        (function () {
-            var btn = document.getElementById('free-download-btn');
-            if (btn && window.BB_DOWNLOAD) {
-                btn.setAttribute('href', window.BB_DOWNLOAD);
-                btn.setAttribute('download', '');
-            }
-        })();
-    </script>
 </body>
 </html>
