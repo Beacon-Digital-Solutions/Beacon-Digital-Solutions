@@ -35,7 +35,12 @@ The App Store IS the search engine that matters most for app downloads.
   `christian,stewardship,tithe,envelope,YNAB,mint,dave,ramsey,retirement,529,privacy,cash,plan`
 - **Screenshots:** first two decide the download. Caption them with benefits, not
   features: "Every dollar gets a job" / "Your data never leaves your iCloud" /
-  "Plan retirement, college, and payoff". Reuse the website `*_Private.png` set.
+  "Plan retirement, college, and payoff".
+- **iPhone-first assets:** the target customer (privacy-conscious, tech-savvy)
+  lives on iPhone — lead every channel (App Store iOS listing, Reddit posts,
+  social clips, website hero) with iPhone screenshots (`images/Thrive/
+  Thrive_*_iphone*.png`); the Mac shots support the "full native Mac app"
+  differentiator, not the hook.
 - **The "Data Not Collected" screenshot (do this one):** dedicate one App Store
   screenshot frame to the privacy label itself — a shot of Thrive's own App Store
   privacy section reading **"Data Not Collected"**, captioned *"Go ahead — check
