@@ -36,6 +36,12 @@ The App Store IS the search engine that matters most for app downloads.
 - **Screenshots:** first two decide the download. Caption them with benefits, not
   features: "Every dollar gets a job" / "Your data never leaves your iCloud" /
   "Plan retirement, college, and payoff". Reuse the website `*_Private.png` set.
+- **The "Data Not Collected" screenshot (do this one):** dedicate one App Store
+  screenshot frame to the privacy label itself — a shot of Thrive's own App Store
+  privacy section reading **"Data Not Collected"**, captioned *"Go ahead — check
+  the label."* Competitor labels list "Data Used to Track You / Data Linked to
+  You"; ours is Apple-verified proof of the pitch. Same asset works as the
+  strongest social/Reddit image.
 - **In-app review prompt:** already implemented (`askForReviewOnMilestone`). Ratings
   are the single biggest ranking factor — verify it fires after a genuinely happy
   moment (e.g. completing a monthly review), never after an import error.
