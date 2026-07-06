@@ -47,8 +47,13 @@ The App Store IS the search engine that matters most for app downloads.
   moment (e.g. completing a monthly review), never after an import error.
 - **Apple Small Business Program:** enroll (free, developer.apple.com) → Apple's
   commission drops 30% → **15%** on the $8/mo subscription. This is real money.
-- **Promo codes:** ASC gives ~100 free codes per version. Budget them: 30 for
-  podcast/blog reviewers, 20 for church pilot families, keep the rest.
+- **Subscription Offer Codes (the review/gift currency):** Thrive is a free app,
+  so classic app promo codes don't apply — create OFFER CODES on the Thrive
+  Premium subscription instead (ASC → the subscription → Offer Codes; requires
+  the subscription to be Approved). Free-duration codes (e.g. 3 months free),
+  up to 150,000/quarter. Budget: reviewers/podcasts get 3–6-month codes, church
+  pilot families 6–12 months. Redemption: App Store → profile → Redeem, or
+  https://apps.apple.com/redeem?ctx=offercodes&id=6779286706&code=CODE
 - **Pitch Apple editorial:** App Store Connect → "Promote Your App" form. Angle:
   privacy-first finance + universal Mac/iPhone + faith niche. Long shot, costs 20 min.
 
